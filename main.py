@@ -8,7 +8,9 @@ The line is the resignation of a retry loop: it knocked 4,096 times
 (2**12 retries, the shape of exponential backoff giving up) and nobody
 answered, and the comic turn is the reversal — the door, not the
 knocker, owes the apology. Flat, tired, faintly passive-aggressive,
-exactly the voice of a worker who has had enough.
+exactly the voice of a worker who has had enough. A tired engineering
+manager reading it hears a familiar complaint: the system that kept
+trying, unthanked, until it stopped.
 """
 
 import os
@@ -17,6 +19,8 @@ OUTPUT_PATH = "/output/entry.txt"
 
 # The turn: the knocker is owed an apology by the door. A complaint only
 # a retry loop could make — 4,096 knocks is 2**12, the retries running out.
+# The em dash sets up the quit: everything before it is the grievance,
+# "I quit" is the resignation itself, two beats in one line.
 LINE = (
     "I knocked 4,096 times, nobody answered, and the door still owes "
     "me an apology \u2014 I quit."
